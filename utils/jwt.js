@@ -9,7 +9,7 @@ const generateToken = (user) => {
         phoneNumber: user.phoneNumber,
     };
 
-    return jwt.sign(payload,config.jwtSecret, {expiresIn: '1h'});
+    return jwt.sign(payload,config.jwtSecret, {expiresIn: '8h'});
 }
 
 module.exports = generateToken;
